@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Github Actions Tutorial" - By Pinspire Institute</p>
+        <p>{process.env.REACT_APP_WELCOME_TEXT || "GitHub Action Tutorial"} - By Pinspire Institute</p>
         <a
           className="App-link"
           href="https://youtube.com/@DevOpsPro"

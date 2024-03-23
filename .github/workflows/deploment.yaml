@@ -1,16 +1,16 @@
 name: CI/CD for React App
 
-on: 
+on:
   push:
-  #   branches: [main]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
-  buils_and_deploy:
-    runs-on: ubuntu_latest
+  build_and_deploy:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
